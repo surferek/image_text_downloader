@@ -26,7 +26,7 @@ w lini komend wpisać polecenie:
  * `pip install -r requirements.txt`
  * `python main.py <url> <dir_name>`
  
- #####przykład:
+ ##### przykład:
  `python main.py https://lyapko.pl/produkt/aplikator-wieloiglowy-lyapko-stopka-b-plus/ lyapko`
  
 ----
