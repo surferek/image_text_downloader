@@ -54,7 +54,7 @@ Jeżeli miałbym więcej czasu przeznaczać na rozwinięcie serwisu myślę, że
 W modelu danych Dokument reprezentowałby mniej więcej poniższą strukturę w najbardziej podstawowej formie
 ```
 {
-    "name": dev.zdrowed.pl,
+    "name": dev.zdroweda.pl,
     "content": [
         {"text": "examplary text from webpage"},
         {"images: [
