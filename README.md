@@ -12,16 +12,16 @@ Narzędzie służy do pobierania zawartości tekstowej podanej strony oraz plik�
 
 ----
 **Docker** 
-######Jeżeli użytkownik posiada zainstalowanego dockera:
+###### Jeżeli użytkownik posiada zainstalowanego dockera:
 w lini komend wpisać polecenie `run_service.bat <url> <dir_name>`
 
-#####przykład: 
+##### przykład: 
 `run_service.bat https://lyapko.pl/produkt/aplikator-wieloiglowy-lyapko-stopka-b-plus/ lyapko`
 
 ----
 
 **Python**
-######W przypadku braku dockera serwis można uruchomić wykorzystując lokalną instalację pythona:
+###### W przypadku braku dockera serwis można uruchomić wykorzystując lokalną instalację pythona:
 w lini komend wpisać polecenie:
  * `pip install -r requirements.txt`
  * `python main.py <url> <dir_name>`
@@ -31,20 +31,20 @@ w lini komend wpisać polecenie:
  
 ----
 
-###Architektura
+### Architektura
 
 ----
 ![alt text](architecture.jpg)
 
-###Testy
+### Testy
 
 ----
-######W celu uruchomienia testów należy przejść do folderu `tests` oraz uruchomić plik `test_main.py`
+###### W celu uruchomienia testów należy przejść do folderu `tests` oraz uruchomić plik `test_main.py`
 ***Uwaga:*** 
-######W trakcie developmentu zauważyłem, że z modelowej strony są pobierane dwa pliki `html.png` oraz `django.png`. Są to puste pliki, które z niewiadomych mi przyczyn zmieniają swoje mdsum-y, na potrzeby zadania te zachowanie nie było dogłębnie analizowane.
+###### W trakcie developmentu zauważyłem, że z modelowej strony są pobierane dwa pliki `html.png` oraz `django.png`. Są to puste pliki, które z niewiadomych mi przyczyn zmieniają swoje mdsum-y, na potrzeby zadania te zachowanie nie było dogłębnie analizowane.
 
 
-###Komentarze
+### Komentarze
 
 ----
 
