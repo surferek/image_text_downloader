@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>To jest tytuł mojej strony</title>
+  </head>
+
+  <body>
+      <!-- tutaj jest komentarz -->
+      <h1> Tutaj będzie właściwa zawartość strony.</h1>
+      <br>
+      <br>
+      <button
+            onclick="window.scrollTo(0,document.body.scrollHeight);">
+                Zjedź na sam dół
+      </button>
+
+      <br><br><br>
+      --- < br > - powoduje załamanie lini (enter)<br>
+      --- ctrl + backslash - pokazywanie i chowanie się paska projektu<br>
+      --- ctrl + fowardslash - komentarz dla lini<br>
+
+<!-- NAGŁÓWKI -->
+      <h1>To jest nagłówek (h1)</h1>
+      <h2>To jest mniejszy nagłówek (h2)</h2>
+      <h3>To jest jeszcze mniejszy nagłówek (h3)</h3>
+      <h4>To jest jeszcze mniejszy nagłówek niż poprzedni (h4) </h4>
+      <h5>To jest praktycznie najmniejszy nagówek (h5)</h5>
+      <h6>Ten nagłówek jest najmniejszy (h6)</h6>
+
+<!-- PARAGRAFY -->
+      <p>To jest początek paragrafu</p>
+      <p>Inny tekst pochodzący z innego paragrafu będzie się zaczynał od nowej linii</p>
+
+<!-- POGRUBIANIE, KURSYWA, PODKRESLENIE -->
+      <b>Ten tekst będzie pogrubiony</b>
+
+      <!-- Stara metoda -->
+      <p><b>Ten tekst jest pogrubionym tekstem paragrafu</b></p>
+      <p><i>Ten tekst jest napisany kursywą</i></p>
+      <p><u>Ten tekst jest podkreślony</u></p>
+
+
+      <!-- Nowa metoda -->
+      <h3>Nowa metoda -- sprawdz w kodzie źródowym</h3>
+      <p><strong>Ten tekst jest pogrubionym tekstem paragrafu</strong></p>
+      <p><em>Ten tekst jest napisany kursywą</em></p>
+      <p><u>Ten tekst jest podkreślony</u></p>
+      <br>----------------------------------------------------------------------
+
+<!-- ####################################################################### -->
+<!-- ####################################################################### -->
+<!-- ####################################################################### -->
+
+
+
+<!-- LISTY  -->
+      <h2>LISTY</h2>
+
+      <!-- Lista numerowana -->
+      <ol>
+        <li>Pierwszy element listy</li>
+        <li>Drugi element listy</li>
+        <li>Trzeci element listy</li>
+      </ol>
+
+      <!-- Lista nienumerowana -->
+      <ul>
+        <li>Pierwszy element</li>
+        <li>Drugi element </li>
+      </ul>
+
+
+      <!-- Tworzenie podpunktów listy -->
+      <ol>
+        <li>Pierwszy element listy</li>
+        <li>Drugi element listy</li>
+        <ul>
+          <li>Trzeci element listy</li>
+          <li>Czwarty element listy</li>
+          <ol>
+            <li>Jeszcze głębsze zagnieżdżenie</li>
+            <li>I jeszcze jeden podpunkt</li>
+          </ol>
+        </ul>
+      </ol>
+      <br>----------------------------------------------------------------------
+
+<!-- ####################################################################### -->
+<!-- ####################################################################### -->
+<!-- ####################################################################### -->
+
+<!-- DIVS AND SPANS -->
+      <h2>DIVS AND SPANS</h2>
+      <!-- Div pozwala nadać nazwę naszej grupy -->
+      <!-- Najczęściej wykorzystywae prz łączeniu z CSS -->
+      <div class="Grupa1">
+        <h3>Grupa pierwsza</h3>
+        <p>Tekst należący do grupy pierwszej</p>
+      </div>
+
+      <!-- Span pozwala wstawić inny styl do div-a lub lini tekstu -->
+      <div class="Grupa2">
+        <h3>Grupa druga</h3>
+        <!-- tekst znajdujący się w Spanie pozwala na nadanie mu innego stylu  -->
+        <p>Tekst <span>należący do grupy</span> drugiej</p>
+      </div>
+      <br>----------------------------------------------------------------------
+
+<!-- ####################################################################### -->
+<!-- ####################################################################### -->
+<!-- ####################################################################### -->
+
+<!-- Atrybuty -->
+
+      <h2>ATRYBUTY</h2>
+      <!-- Wstawianie zdjęć do naszego .html-a -->
+      <!-- alt pozwala dać dodatkowy opis do naszego obrazu -->
+      <!-- height i width pozwala na dostosowanie oczekiwanych wymiarów zdjęcia -->
+      <img src="django.png" alt="Nie mogę znaleść zdjęcia o takiej nazwie"
+      width="200" height="200"><br>
+
+      <img src="html.png" alt="Nie mogę znaleść zdjęcia o takiej nazwie">
+      <br>      <br>      <br>
+
+      <!-- Zakotwiczanie linków jako odnośników -->
+      <a href="newpage.html">Przejdz do linku</a><br>
+      <!-- Link do zewnętrznej strony -->
+      <a href="https://www.google.pl/">Strona głowna google</a><br><br>
+      <!-- Obrazek jako link -->
+      <a href="https://www.google.pl/">
+        <img src="django.png" alt="Nie mogę znaleść zdjęcia o takiej nazwie"
+        width="200" height="200">
+      </a>
+      <br>----------------------------------------------------------------------
+
+<!-- ####################################################################### -->
+<!-- ####################################################################### -->
+<!-- ####################################################################### -->
+
+
+<!-- Tabele  -->
+
+  <h2>TABELE</h2>
+  <!-- border="1" - przykładowe dodanie krawędzi tabeli  -->
+  <table border="1">
+    <!-- thead odpowiada za wpisywanie nazw kolumn  -->
+    <!-- Można tworzyć tabele bez nazw kolumn ale jest to nie eleganckiec  -->
+    <thead>
+      <th>Nazwy</th>
+      <th>Moich</th>
+      <th>Kolumn</th>
+    </thead>
+    <!-- tr odpowiada za zawartośc wierszy  -->
+    <tr>
+      <td>Zawartość</td>
+      <td>Pierwszego</td>
+      <td>Wiersza</td>
+    </tr>
+    <!-- Dodajemy kolejny wiersz -->
+    <tr>
+      <td>Zawartość</td>
+      <td>Drugiego</td>
+    </tr>
+    <tr>
+      <td>Kolejny</td>
+    </tr>
+  </table>
+
+
+  <h4>Quizz table</h4>
+  <table border="1">
+    <thead>
+      <th>Country name</th>
+      <th>Country Flag</th>
+      <th>GDP (In milions)</th>
+    </thead>
+    <tr>
+      <td>USA</td>
+      <td>
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/190px-Flag_of_the_United_States.svg.png"
+          width="90" height="60" alt="">
+      </td>
+      <td>18,561,930</td>
+    </tr>
+    <!--  -->
+    <tr>
+      <td>India</td>
+      <td>
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/150px-Flag_of_India.svg.png"
+          width="90" height="60" alt="">
+      </td>
+      <td>2,250,990</td>
+    </tr>
+    <!--  -->
+    <tr>
+      <td>UK</td>
+      <td>
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/200px-Flag_of_the_United_Kingdom.svg.png"
+          width="90" height="60" alt="">
+      </td>
+      <td>2,649,890</td>
+    </tr>
+
+  </table>
+  <br>----------------------------------------------------------------------
+
+<!-- ####################################################################### -->
+<!-- ####################################################################### -->
+<!-- ####################################################################### -->
+
+
+<!-- Forms -->
+  <h2>FORMS</h2>
+
+
+  <h3>Okienko logowania</h3>
+
+  <!-- ignorujemy na razie class ponieważ będzie ono miało powiązania z CSS -->
+  <form>
+    <h4>Zaloguj się</h4>
+    <table border="1">
+      <thead>
+        <th>Nazwa użytkownika</th>
+        <th>Email</th>
+        <th>Hasło</th>
+        <th>Kolor</th>
+      </thead>
+      <tr>
+        <td>    <input type="text" name="Użytkownik" value="Domyślna nazwa">
+          </td>
+        <td>    <input type="email" name="Mail adres" value="@gmail.com">
+          </td>
+        <td>    <input type="password" name="Hasło" value="tajneHasło">
+          </td>
+        <td>    <input type="color" name="" value="">
+          </td>
+      </tr>
+    </table>
+
+    <input type="submit" name="" value="Zatwierdź dane">
+
+  </form>
+
+
+  <h3>Inne operacje na formularzach</h3>
+  <form>
+    <p>Podaj adres email</p>
+    <!-- Klikając Zatwierdź przypisujemy do nazwy "name" zawartość wpisaną
+            w pole usermail -->
+    <input type="email" name="usermail" value="">
+    <input type="submit" name="" value="Zatwierdź">
+  </form>
+
+  <form action="formAction.html" method="get">
+    <p>Uzupełnij pole tekstu</p>
+    <!-- Klikając Zatwierdź wykonujemy akcję przejśćia do strony newpage.html -->
+    <input type="tekst" name="usermail" value="Kliknij Zatwierdź">
+    <input type="submit" name="" value="Zatwierdź">
+  </form>
+
+
+  <form action="https://google.pl" method="get">
+    <p>Uzupełnij pole tekstu</p>
+    <p><strong><em>Zwróć uwagę, że po przejściu na stronę googla zawartość naszego inputu
+       została przeniesiona do adresu URL co może okazać się użyteczne w przyszłośći
+    </em></strong></p>
+    <!-- Klikając Zatwierdź wykonujemy akcję przejśćia do strony newpage.html -->
+    <input type="tekst" name="usertxt" value="Przejdź do google">
+    <input type="submit" name="" value="Zatwierdź">
+  </form>
+
+
+  <h2>LABELS</h2>
+  <form>
+    <!-- W taki sposób łączymy etykicetę z inputem  -->
+    <!-- ID jest prawdopodobnym parametrem do identyfikowania unikalnych
+        tagów w HTML-u-->
+    <label for="uesrinput">Podaj imię:</label>
+    <input id="userinput" type="text" name="" value="Block 1">
+    <input id="userinput" type="text" name="" value="Block 2">
+  </form>
+
+  <form>
+    <!-- Placeholdery służą do przechowywania tymczasowej zawartości formularza  -->
+    <label for="surname">Podaj Nazwisko:</label>
+    <input id="surname" type="text" name="" placeholder="Tymczasowy">
+    <input id="surname" type="text" name="" placeholder="tekst">
+  </form>
+
+  <form>
+    <!-- Placeholdery służą do przechowywania tymczasowej zawartości formularza  -->
+    <!-- Required sprawia, że nasza strona wymaga uzupełnienia zawartości danego formularza -->
+    <label for="surname">Podaj Kolor:</label>
+    <input id="surname" type="text" name="" placeholder="Kolor wymagany" required>
+    <input id="surname" type="text" name="" placeholder="Kolor opcjonalny">
+    <input type="submit" name="" value="Zatwierdź">
+  </form>
+
+  <br>----------------------------------------------------------------------
+
+<!-- ####################################################################### -->
+<!-- ####################################################################### -->
+<!-- ####################################################################### -->
+
+  <h3>Recenzje hotelowe</h3>
+
+  <form method="get">
+    <h4>Czy pochodzisz z polski?</h4>
+    <label for="kraj">Pochodzę : </label>
+    <!-- Aby polączyć ze sobą radio buttony musimy nadać im ten sam "name" -->
+    <input  id="kraj" type="radio" name="odpowiedź" value="pochodzi">
+
+    <label for="kraj">Nie pochodzę : </label>
+    <input  id="kraj" type="radio" name="odpowiedź" value="npochodzi">
+    <!--  -->
+    <!-- select pozwala nam na stworzenie comboboxa  -->
+    <h4>Na ile oceniasz pobyt w hotelu?</h4>
+    <select name="ocena">
+      <option value="Może być">3</option>
+      <option value="Kiepsko">2</option>
+      <option value="Tragedia!">1</option>
+    </select>
+    <!-- Dla front-end-u przekazane są wartości między >..<
+         Dla back-end-u wartości są zawarte w pozycji value="..."  -->
+
+    <h4>Dodatkowe uwagi?</h4>
+    <!-- Stworzenie textarea -->
+    <textarea name="mytextarea" rows="8" cols="80"></textarea>
+
+
+    <!-- Klikająz zatwierdź przypisujemy do adresu URL -
+          wartości zapisane w polach "value" -->
+    <input type="submit" name="" value="Zatwierdź">
+  </form>
+
+
+
+
+
+
+
+  </body>
+</html>
